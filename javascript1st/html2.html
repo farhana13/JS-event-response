@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JS practice</title>
+	<link rel="stylesheet" type="text/css" href="file1.css">
+	<script type="text/javascript" src="file1.js"></script>
+</head>
+<body onload="message('This page is loaded!')" onresize="message('Your page is being resized')">
+	<div class="r">
+		<h1 class="h1"> JavaScript Event response Practice Work</h1>
+		<p onclick="message('Hi!')"><em> Click</em> on this message.</p>
+		<p id="output" class="p"></p>
+	</div>
+	<div class="date">
+		<p id="demo">To see today's date click on the button below.</p>
+		<button type="button" onclick="displayDate()">Display Date</button>
+	</div>
+	<div class="btn">
+		<button type="btn" onclick="openMe()">Open!</button>
+		<button type="btn" onclick="closeMe()">Close!</button>
+		<p id="sh">Click on the buttons above to close it, and again open it!</p>
+	</div>
+	<div class="onclick">
+		<button onclick="document.getElementById('stuff').innerHTML = 'Good Day!!';">Today's Greetings</button>
+		<button onclick="document.getElementById('stuff').innerHTML = 'Stand on the shoulders of giants!<br> Work hard, let the dreams land on the ground!';">Today's Quotes!</button>
+		<p id="stuff">Again click the buttons above!</p>
+	</div>
+	<div class="console">
+		<h2>Onclick console.log check out</h2>
+		<img class="img" src="aurora.jpg" alt="Northern Lights!" onclick="console.log(this.alt)">
+		<div onclick="console.log(this.innerHTML)"> Check out a div</div>
+		<hr>
+		<img class="img" src="horin.jpg" alt="Sundorbon! Horin!!" id="ID-1" onclick="displayId(this)">
+		<div onclick="displayId(this)" id="ID-2">Check out another div</div>
+	</div>
+
+</body> 

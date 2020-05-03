@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>js practice</title>
+	<link rel="stylesheet" type="text/css" href="file1.css">
+	<script type="text/javascript" src="file1.js"></script>
+</head>
+<body>
+	<script>
+		alert("hello world!");
+	</script>
+	<noscript>
+		your browser doesnt support or has disabled JavaScript
+	</noscript>
+	<script>
+		document.write("this is document.write test");
+	</script>
+	<h1 id="test">tester</h1>
+
+	<script> 
+		document.getElementById('test').innerHTML = "hello world innerHTML";
+	</script>
+	<p> what happens if I take two elements with same id ="test"? js will not count the second one!</p>
+	<p>by tag names ARRAY test</p>
+	<script>
+		console.log("console.log test");
+	</script>
+	<script>
+		var name = prompt ("what is your name?");
+		document.write(name);
+		document.write("<h1>" + name + "</h1>");
+		document.write(name + " is a learner"+ "<br>");
+		document.write(document.baseURI+"<br>");
+		document.write(document.title+"<br>");
+		var pars = document.getElementsByTagName('p');
+		document.write(pars + "<br>");
+		document.write(pars.length);
+		console.log(name);
+		alert(name);
+	</script>
+	<script>
+		var name = prompt("where do you live?");
+		var name = Date();
+		var name = window.location;
+		var width = window.innerWidth;
+		var pi = 3.14;
+	</script>
+	<script>
+		var x = "Hello!";
+		welcomeMsg(x);
+		function welcomeMsg(msg){
+			alert(msg);
+			var name = prompt("what is your name?");
+		}
+		var firstName = welcomeMsg("Hi!");
+
+	</script>
+</body>
+</html>
